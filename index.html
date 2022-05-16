@@ -14,12 +14,52 @@
 
         <!--Add your CSS rules here-->
         <style>
-            
+            html,body{
+                height: 100%;
+            }
+            body{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+             h2{
+                font-size: 40px;
+            }
+            h1,h2{
+                color: tomato;
+               
+                font-family:'titan one' , cursive;
+            }
+            h1{
+                font-size: 60px;
+            }
+            i{
+                color: tomato;
+            }
+           body{
+               background: url(https://images.unsplash.com/photo-1580655653885-65763b2597d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9sbHl3b29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60);
+               animation: background-pan 15s ease-in-out infinite;
+           }
+           @keyframes background-pan{
+               0%{
+                   background-position: left;
+               }
+               50%{
+                background-position: right;
+               }
+               100%{
+                background-position: left;
+               }
+           }
         </style>
     </head>
     <body>
         <h1>Hollywood Quiz</h1>
-        <a href="game.html"><i class="ri-play-circle-fill"></i></a>
+        <div>
+        <a href="game.html"><i class="ri-play-circle-fill ri-3x"></i></a>
         <h2>PLAY</h2>
+    </div>
+
     </body>
 </html>
